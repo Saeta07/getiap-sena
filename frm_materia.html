@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<title>GETIAP</title>
+</head>
+
+<body class="container">
+	<div>
+		<div class="logo">
+			<img class="img-logo" src='./src/logo.png' alt="Logo">
+		</div>
+		<header>
+			<div class="topnav">
+				<a href="./principal.html">Inicio</a>
+				<a class="active" class="analysis" href="./frm_materia.html">Materia Prima</a>
+			</div>
+		</header>
+		<div class="cos">
+			<div class="analysis">
+				<h2>MATERIA PRIMA</h2>
+			</div>
+			<div class="mover">
+				<div class="container-form-footer3">
+					<button type="button" class="btn">Nuevo</button>
+					<button type="button" class="btn">Editar</button>
+					<button type="button" class="btn">Modificar</button>
+					<button type="button" class="btn">Eliminar</button>
+				</div>
+				<br>
+				<div>
+					<form>
+						<input type="text" placeholder="Item" required="required">
+						<br>
+						<br>
+						<ol>
+							<li>
+								<label for="materia">Materia Prima</label>
+								<input type="raw" id="dataraw" placeholder="Ingrese materia prima"
+									required="required" />
+							</li>
+							<li>
+								<label for="apariencia">Apariencia</label>
+								<input type="list" list="appereance">
+								<datalist id="appereance">
+									<option value="Líquido sin particulas suspendidas"></option>
+									<option value="Líquido viscoso sin particulas suspendidas"></option>
+									<option value="Líquido claro viscoso sin particulas suspendidas"></option>
+									<option value="Líquido traslucido sin particulas extrañas"></option>
+									<option value="Líquido transparente  a ligeramente turbio"></option>
+									<option value="Líquido aceitoso translucido"></option>
+									<option value="Líquido aceitoso"></option>
+									<option value="Líquido ligeramente turbio"></option>
+									<option value="Líquido transparente"></option>
+									<option value="Solido homogeneo sin particulas extrañas"></option>
+									<option value="Solido en Pellets heterogeneos sin particulas extrañas"></option>
+									<option value="Solido ceroso"></option>
+									<option value="Solido cremoso"></option>
+									<option value="Solido cristal"></option>
+									<option value="Polvo Blanco, inodoro, ligeramente higroscopico"></option>
+									<option value="Polvo Blanco, inodoro, higroscopico"></option>
+									<option value="Pastillas heterogeneas sin particulas extrañas"></option>
+								</datalist>
+
+							</li>
+							<li>
+								<label for="fechaing">Fecha de Ingreso</label>
+								<input type="date" id="lecturedate" required="required" />
+							</li>
+							<li>
+
+								<label for="color">Color</label>
+								<input type="list" list="color">
+								<datalist id="color">
+									<option value="Amarillo"></option>
+									<option value="Amarillo/Naranja"></option>
+									<option value="Amarillo a Amarillo/verde claro"></option>
+									<option value="Amarillo a marron"></option>
+									<option value="Amarillo a naranja"></option>
+									<option value="Amarillo a pardo claro"></option>
+									<option value="Amarillo ambar"></option>
+									<option value="Amarillo claro"></option>
+									<option value="Amarillo palido"></option>
+									<option value="Amarillo palido a amarillo"></option>
+									<option value="Amarillo palido a ambar"></option>
+									<option value="Amarillo tenue"></option>
+									<option value="Ambar"></option>
+									<option value="Ambar a pardo"></option>
+									<option value="Ambar palido"></option>
+									<option value="Azul"></option>
+									<option value="Azul oscuro"></option>
+									<option value="Beige"></option>
+									<option value="Blanco"></option>
+									<option value="Blanco claro a amarillo"></option>
+									<option value="Blanco a pardo ligeramente amarillo"></option>
+									<option value="Blanco cremoso"></option>
+									<option value="Blanco lechoso"></option>
+									<option value="Bronce"></option>
+									<option value="Caramelo"></option>
+									<option value="Incoloro"></option>
+									<option value="Incoloro a amarillo"></option>
+									<option value="Incoloro a amarillo claro"></option>
+									<option value="Incoloro a amarillo ligero"></option>
+									<option value="Incoloro a amarillo oscuro"></option>
+									<option value="Incoloro a amarillo palido"></option>
+									<option value="Incoloro a blanco"></option>
+									<option value="Incoloro opaco"></option>
+									<option value="Ligeramente amarillo translucido"></option>
+									<option value="Líquido blanco opaco"></option>
+									<option value="Morado"></option>
+									<option value="Morado Oscuro"></option>
+									<option value="Naranja"></option>
+									<option value="Naranja a ocre"></option>
+									<option value="Pardo"></option>
+									<option value="Pardo a pardo oscuro"></option>
+									<option value="Pardo oscuro rojizo"></option>
+									<option value="Plata"></option>
+									<option value="Purpura palido a pardo"></option>
+									<option value="Rojizo"></option>
+									<option value="Rojo"></option>
+									<option value="Transparente"></option>
+									<option value="Transparente/Pardo muy claro"></option>
+									<option value="Transparente a amarillo claro"></option>
+									<option value="Transparente a turbio"></option>
+									<option value="Transparente a incoloro"></option>
+									<option value="Violeta"></option>
+								</datalist>
+							</li>
+							<li>
+
+								<label for="olor">Olor</label>
+								<input type="list" list="smell">
+								<datalist id="smell">
+									<option value="Característico"></option>
+								</datalist>
+							</li>
+							<li>
+								<label for="soluble">Solubilidad</label>
+								<input type="list" list="solubility">
+								<datalist id="solubility">
+									<option value="N/A"></option>
+									<option value="5g en 100ml de agua"></option>
+									<option value="Insoluble en Agua"></option>
+									<option value="Soluble en agua"></option>
+									<option value="Soluble en agua (Sln 5%)"></option>
+									<option value="Soluble en agua (Sln 10%)"></option>
+									<option value="Soluble en aceite"></option>
+									<option value="Soluble en agua y alcohol"></option>
+								</datalist>
+							</li>
+							<li>
+
+								<label for="ph2">Rango pH</label>
+								<input type="number" min="0" max="12.5" step="0.01" id="Peache2" required="required" />
+							</li>
+							<li>
+								<label for="densidad">Densidad (g/mL)</label>
+								<input type="number" min="0" max="5" step="0.01" id="density" required="required" />
+							</li>
+
+
+							</li>
+
+						</ol>
+						<br>
+						<br>
+						<div class="container-form-footer2">
+							<button type="button" class="cancelbtn">Cancelar</button>
+							<button type="button" class="aceptbtn">Aceptar</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

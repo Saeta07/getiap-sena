@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<title>GETIAP</title>
+</head>
+
+<body class="body">
+	<div class="container">
+		<div class="logo">
+			<img class="img-logo" src='./src/logo.png' alt="Logo">
+		</div>
+		<header>
+			<div class="topnav">
+				<a href="./principal.html">Inicio</a>
+				<a class="active" class="analysis" href="./frm_control.html">Control Microbiologico</a>
+			</div>
+		</header>
+		<div class="cos">
+			<div class="analysis">
+				<h2>CONTROL MICROBIOLOGICO</h2>
+			</div>
+			<div class="mover">
+				<div class="container-form-footer3">
+					<button type="button" class="btn">Nuevo</button>
+					<button type="button" class="btn">Editar</button>
+					<button type="button" class="btn">Modificar</button>
+					<button type="button" class="btn">Eliminar</button>
+
+				</div>
+				<br>
+				<div>
+					<input type="text" placeholder="Lote" required="required">
+					<input type="text" placeholder="N° Análisis" required="required">
+
+					<br>
+					<br>
+
+					<ol>
+						<li>
+							<label for="siembra">Fecha de Siembra</label>
+							<input type="date" id="dateseed" required="required" />
+						</li>
+						<li>
+							<label for="muestra">Descripción de la muestra</label>
+							<input type="descri" id="dateseed" placeholder="Agregar descripción" required="required" />
+						</li>
+						<li>
+							<label for="fills">Fecha lectura Bacterias</label>
+							<input type="date" id="lecturebac" required="required" />
+						</li>
+						<li>
+
+							<label for="treballadors">Recuento Bacterias</label>
+							<input type="number" id="bacterias" placeholder="Numº bacterias" required="required" />
+						</li>
+						<li>
+
+							<label for="pagina">Recuento Máx de Mesófilos Aerobios</label>
+							<input type="count" id="recuento" placeholder="UFC/g" required="required" />
+						</li>
+						<li>
+							<label for="pagina">Recuento Máx de Mohos/Levaduras</label>
+							<input type="count" id="recuento" placeholder="UFC/g" required="required" />
+						</li>
+						<li>
+
+							<label for="color">Fecha Lectura</label>
+							<input type="date" id="datelecture" required="required" />
+						</li>
+						<li>
+							<label for="pagina">Autor</label>
+							<input type="aut" id="autor" placeholder="Autor" required="required" />
+						</li>
+						<li>
+							<label>Presencia/Ausencia Pátogeno</label>
+							<br>
+							<label>
+								Escherichia coli
+								<input type="checkbox" name="peyau" value="ecoli">
+
+							</label>
+							<label>
+								<br>
+								Pseudomonas aeruginosa
+								<input type="checkbox" name="peyau" value="pseudo">
+
+							</label>
+							<label>
+								<br>
+								Staphylococcus aureus
+								<input type="checkbox" name="peyau" value="aureus">
+
+							</label>
+							<label>
+								<br>
+								Candida albicans
+								<input type="checkbox" name="peyau" value="candida">
+
+							</label>
+
+							</form>
+						</li>
+
+					</ol>
+				</div>
+
+				</fieldset>
+				<br>
+				<br>
+				<div class="container-form-footer2">
+					<button type="button" class="cancelbtn">Cancelar</button>
+					<button type="button" class="aceptbtn">Aceptar</button>
+
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<title>GETIAP</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="logo">
+			<img class="img-logo" src='./src/logo.png' alt="Logo">
+		</div>
+		<header>
+			<div class="topnav">
+				<a href="./principal.html">Inicio</a>
+				<a class="active" class="analysis" href="./frm_cultivo.html">Medios de Cultivo</a>
+			</div>
+		</header>
+
+		<div class="cos">
+			<div class="analysis">
+				<h2>MEDIOS DE CULTIVO</h2>
+			</div>
+			<div class="mover">
+				<div class="container-form-footer3">
+					<button type="button" class="btn">Nuevo</button>
+					<button type="button" class="btn">Editar</button>
+					<button type="button" class="btn">Modificar</button>
+					<button type="button" class="btn">Eliminar</button>
+				</div>
+				<br>
+				<div>
+					<form>
+						<input type="text" placeholder="Lote" required="required">
+						<br>
+						<br>
+						<ol>
+							<li>
+								<label for="fechauso">Fecha de Uso</label>
+								<input type="date" id="dateuse" required="required" />
+							</li>
+							<li>
+								<label for="numero2">Cantidad Neta</label>
+								<input type="number" list="num2">
+							</li>
+							<li>
+								<label for="soluble">Medio de Cultivo</label>
+								<input type="list" list="crop">
+								<datalist id="crop">
+									<option value="Agar TSA"></option>
+									<option value="Agar Saboraud"></option>
+									<option value="Agar EMB"></option>
+									<option value="Agar Cetrimide"></option>
+									<option value="Agar Manitol salado"></option>
+								</datalist>
+							</li>
+							<li>
+								<label for="volumen">Volumen Preparado</label>
+								<input type="number" id="volume" required="required" />
+							</li>
+							<li>
+
+								<label for="gramos">Gramos Gastados</label>
+								<input type="number" id="grams">
+							</li>
+							<li>
+								<label for="obs">Observaciones</label>
+								<input type="observations" id="observations" required="required" />
+							</li>
+							<li>
+								<label for="resp">Responsable</label>
+								<input type="responsable" id="responsable" required="required" />
+							</li>
+							<li>
+								<label for="codigo">Código Producto</label>
+								<input type="number" id="code">
+							</li>
+							<li>
+								<label for="densidad">Densidad (g/mL)</label>
+								<input type="number" min="0" max="5" step="0.01" id="density" required="required" />
+							</li>
+
+							</li>
+
+						</ol>
+						<br>
+						<br>
+						<div class="container-form-footer2">
+							<button type="button" class="cancelbtn">Cancelar</button>
+							<button type="button" class="aceptbtn">Aceptar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
